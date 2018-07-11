@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+} */
+
+.header {
+  background-color: rgb(121, 32, 32);
+  background-image: url('./components/harry-potter.jpg');
+  background-repeat: no-repeat;
+  height: 160px;
+  padding: 10px;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+
+.sideBar{
+  height: 500px;
+  width: 200px;
+  color:black;
+  font-size: 1rem;
+  align-content: center;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  background: burlywood;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 4px;
+  font-family: cursive;
+
+
+}
+.input{
+  margin: 2em .5em;
+  border-radius: 3px;
+  align-content: center;
+}
+.button{
+  margin: 2em .5em;
+  background:black;
+  color: white;
+  font-family: cursive;
+  font-size: 1rem;
+  border-radius: 2px;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  
+}
+.button:hover{
+  background: rgb(49, 14, 14);
+}
+.button:active{
+  background: rgb(75, 89, 94);
+}
+.body-area{
+  background-image: url('./components/lionking.jpg');
+  background-size: 100%;  
+  background-repeat: no-repeat;
+    height: 800px;
+  padding: 3px;
+  border-radius: 3px;
+  margin: 3px;
+}
+.output{
+  align-items: center;
+  margin:50px 50px;
+}
+.outputbutton{
+  margin-left: 100px;
+}
+.hr{
+  color: black;
+  
+}
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
