@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3005;
 let mv = require(__dirname + '/controllers/movie_controllers');
 
 app.use(bodyParser.json());//middleware
@@ -15,8 +14,7 @@ app.delete('/api/movies/:id', mv.delete);
 
 
 
-// let {SERVER_PORT}=process.env
-let SERVER_PORT = 3005;
+let {SERVER_PORT, API_KEY}=process.env
 
 // app.use(express.static(__dirname + '/../public/build'));
 

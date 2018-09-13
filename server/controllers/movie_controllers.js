@@ -1,13 +1,14 @@
 let movies = [];
 let id = 0;
 const baseUrl = 'https://api.themoviedb.org/3/discover/movie?api_language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1';
+API_KEY='api_key=3401376ccdc712f41e58c4922e7de14d'
 module.exports = {
     all:(res,req)=>{
-        let promise=axios.get(baseUrl);
+        let promise=axios.get(baseUrl+API_KEY);
         promise.then((res)=>{
-            // cons
+            console.log(res)
             movies=res.data.results;
-             res.status(200).json({data:movies})
+             res.status(200).json({data: movies})
         })
     },
     create:(req,res) =>{
